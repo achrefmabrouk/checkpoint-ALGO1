@@ -1,0 +1,18 @@
+ALGORITHM compteur
+VAR
+    Ph: STRING;
+    NbV,NbW,i: INTEGER; 
+BEGIN
+    NbV:=0;NbW:=1;i:=0;
+    WHILE (ph[i]<>".") DO
+        IF (ph[i] in ["a","e","i","o","y","u"]) THEN 
+        NbV:=NbV+1;
+        END_IF
+        IF (ph[i]=" ") THEN
+        NbW:=NbW+1;
+        i:=i+1;
+    END_WHILE
+        write("le nombre des voyelles dans la phrase est:",NbV);
+        write("le nombre des mots dans la phrase est:",NbW);
+        write("le nombre des caracteres dans la phrase est:",i+1);
+END
